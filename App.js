@@ -15,8 +15,21 @@ const Stack = createStackNavigator();
     <PaperProvider>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="CreateProfile">
-          <Stack.Screen name="CreateProfile" component={CreateProfile} options={{title: 'Crear Perfil'}}/>
-          <Stack.Screen name="ViewProfile" component={ViewProfile} options={{title: 'Ver Perfil'}}/>
+
+
+          <Stack.Screen 
+          name="CreateProfile" 
+          component={CreateProfile} 
+          options={{title: 'Crear Perfil'}}
+          />
+
+
+          <Stack.Screen 
+          name="ViewProfile"
+           component={ViewProfile}
+            options={{title: 'Ver Perfil'}}
+            />
+            
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
