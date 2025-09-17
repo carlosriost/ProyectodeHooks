@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, ScrollView, Alert, Image} from 'react-native';
-import {Card, TextInput, Button} from 'react-native-paper'; // ✅ Button de Paper
+import {Card, TextInput, Button} from 'react-native-paper'; 
 import styles from '../Styles/styles';
 
 const CreateProfile = ({navigation}) => { // ✅ Corregido: {navigation}
@@ -8,11 +8,13 @@ const CreateProfile = ({navigation}) => { // ✅ Corregido: {navigation}
     const [lastName, setLastName] = useState(''); 
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
-    const [descripcion, setDescripcion] = useState(''); // ✅ Corregido: descripcion
+    const [descripcion, setDescripcion] = useState(''); 
     const [formValid, setFormValid] = useState(false);
 
     useEffect(() => {
-        const isValid = name.trim() !== '' && 
+        const isValid = 
+        
+        name.trim() !== '' && 
         lastName.trim() !== '' && 
         phone.trim() !== '' && 
         email.trim() !== '' && 

@@ -4,6 +4,7 @@ import{ createStackNavigator } from '@react-navigation/stack';
 import { PaperProvider} from 'react-native-paper';
 import CreateProfile from './src/Screens/CreateProfile';
 import ViewProfile from './src/Screens/ViewProfile';  
+import ProfileList from './src/Screens/ProfileList';
 
 
 //importacion de las pantallas
@@ -14,13 +15,19 @@ const Stack = createStackNavigator();
   return(
     <PaperProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="CreateProfile">
+        <Stack.Navigator initialRouteName="ProfileList">
 
 
           <Stack.Screen 
           name="CreateProfile" 
           component={CreateProfile} 
           options={{title: 'Crear Perfil'}}
+          />
+
+          <Stack.Screen 
+          name="ProfileList" 
+          component={ProfileList} 
+          options={{title: 'Listar Perfiles'}}
           />
 
 
