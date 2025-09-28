@@ -33,9 +33,9 @@ const CreateProfile = ({navigation}) => { // ✅ Corregido: {navigation}
             lastName,
             phone,
             email,
-            descripcion, // ✅ Variable correcta
+            descripcion, // 
         };
-        navigation.navigate('ViewProfile', {perfil: profileUser}); // ✅ navigation, no navigator
+        navigation.navigate('ViewProfile', {perfil: profileUser}); // 
     };
 
     return (

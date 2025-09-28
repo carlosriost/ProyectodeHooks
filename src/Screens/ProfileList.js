@@ -14,7 +14,7 @@ const ProfileList = ({navigation}) => {
 
     const useAsyncStorage = (key) => {
        
-       
+                
         const getData = async () => {
             try {
                 const jsonValue = await AsyncStorage.getItem(key);
